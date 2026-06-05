@@ -8,7 +8,7 @@ if (session_status() == PHP_SESSION_NONE) {
 define('DB_HOST', '127.0.0.1');
 define('DB_NAME', 'music_academy');
 define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_PASS', '!Pakistan610');
 
 // Base URL detection
 $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
