@@ -88,7 +88,7 @@ CREATE TABLE `site_settings` (
 
 -- Seed Administrator (password: admin123)
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `role`, `status`) VALUES
-(1, 'Administrador Yuliana', 'admin@yulianaviolinist.com', '$2y$10$wUHTpT.e/3yLh4iYQ6F/A.hC9lW3G1y817tqD0K.P2x10tQ19rV2y', 'admin', 'approved');
+(1, 'Administrador Yuliana', 'yulianadenis899@gmail.com', '$2y$10$wUHTpT.e/3yLh4iYQ6F/A.hC9lW3G1y817tqD0K.P2x10tQ19rV2y', 'admin', 'approved');
 
 -- Seed Instructors
 INSERT INTO `instructors` (`name`, `instrument`, `bio`, `image_url`) VALUES
@@ -114,7 +114,7 @@ INSERT INTO `site_settings` (`setting_key`, `setting_value`) VALUES
 ('hero_title', 'Donde el Violín Cobra Vida'),
 ('hero_subtitle', 'YULIANA VIOLINIST & ACADEMIA DE VIOLÍN'),
 ('hero_desc', 'Descubre la magia del violín. Aprende con Yuliana Violinista e instructores de élite en clases personalizadas presenciales y online.'),
-('contact_email', 'info@yulianaviolinist.com'),
+('contact_email', 'yulianadenis899@gmail.com'),
 ('contact_phone', '+595 976 430263'),
 ('contact_address', 'Asunción, Paraguay');
 

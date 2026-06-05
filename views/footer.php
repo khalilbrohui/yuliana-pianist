@@ -47,7 +47,7 @@
 
                 <div class="footer-nav-col">
                     <h4>Contacto</h4>
-                    <p class="contact-item"><i class="fas fa-envelope"></i> info@yulianaviolinist.com</p>
+                    <p class="contact-item"><i class="fas fa-envelope"></i> yulianadenis899@gmail.com</p>
                     <p class="contact-item"><i class="fas fa-phone"></i> +595 976 430263</p>
                     <p class="contact-item"><i class="fas fa-map-marker-alt"></i> Av. Mariscal López, Asunción, Paraguay</p>
                 </div>

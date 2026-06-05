@@ -10,7 +10,7 @@ try {
         $settings[$row['setting_key']] = $row['setting_value'];
     }
 
-    $contactEmail = $settings['contact_email'] ?? 'info@yulianaviolinist.com';
+    $contactEmail = $settings['contact_email'] ?? 'yulianadenis899@gmail.com';
     $contactPhone = $settings['contact_phone'] ?? '+595 976 430263';
     $contactAddress = $settings['contact_address'] ?? 'Asunción, Paraguay';
 

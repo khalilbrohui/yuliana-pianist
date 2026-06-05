@@ -109,7 +109,7 @@ try {
     // ==========================================
 
     // Seed Admin User
-    $adminEmail = 'admin@yulianaviolinist.com';
+    $adminEmail = 'yulianadenis899@gmail.com';
     $stmt = $db = $pdo->prepare("SELECT id FROM users WHERE email = ?");
     $stmt->execute([$adminEmail]);
     $adminExists = $stmt->fetch();
@@ -119,7 +119,7 @@ try {
         $stmt = $pdo->prepare("INSERT INTO users (name, email, password, role, status) VALUES (?, ?, ?, 'admin', 'approved')");
         $stmt->execute(['Administrador Yuliana', $adminEmail, $adminPass]);
         $adminId = $pdo->lastInsertId();
-        $logs[] = "Usuario Admin creado: admin@yulianaviolinist.com / admin123";
+        $logs[] = "Usuario Admin creado: yulianadenis899@gmail.com / admin123";
     } else {
         $adminId = $adminExists['id'];
         $logs[] = "Usuario administrador ya existe.";
@@ -239,7 +239,7 @@ try {
         'hero_title' => 'Donde el Violín Cobra Vida',
         'hero_subtitle' => 'YULIANA VIOLINIST & ACADEMIA DE VIOLÍN',
         'hero_desc' => 'Descubre la magia del violín. Aprende con Yuliana Violinista e instructores de élite en clases personalizadas presenciales y online.',
-        'contact_email' => 'info@yulianaviolinist.com',
+        'contact_email' => 'yulianadenis899@gmail.com',
         'contact_phone' => '+595 976 430263',
         'contact_address' => 'Asunción, Paraguay'
     ];
