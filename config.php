@@ -5,10 +5,10 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 
 // Database Credentials
-define('DB_HOST', '127.0.0.1');
-define('DB_NAME', 'music_academy');
-define('DB_USER', 'root');
-define('DB_PASS', '!Pakistan610');
+define('DB_HOST', 'sql302.infinityfree.com'); // Reemplaza con tu MySQL Hostname de InfinityFree
+define('DB_NAME', 'if0_42108863_music_academy'); // Reemplaza con tu nombre de base de datos
+define('DB_USER', 'if0_42108863');
+define('DB_PASS', 'ObSsMEoJQf7w');
 
 // Base URL detection
 $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
