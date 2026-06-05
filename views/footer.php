@@ -9,11 +9,11 @@
                 <div class="footer-info">
                     <a href="<?= BASE_URL ?>/" class="logo-link">
                         <span class="logo-text">YULIANA</span>
-                        <span class="logo-subtext">PIANIST & ACADEMIA</span>
+                        <span class="logo-subtext">VIOLINIST & ACADEMIA</span>
                         <div class="logo-dot"></div>
                     </a>
                     <p class="footer-about">
-                        Academia de música de primer nivel que ofrece enseñanza personalizada en piano, guitarra, batería y técnicas vocales. Descubre tu talento con nuestros instructores de élite.
+                        Academia de violín de primer nivel que ofrece enseñanza personalizada en violín acústico y eléctrico, método Suzuki y técnica de arco. Descubre tu talento con nuestros instructores de élite.
                     </p>
                     <div class="footer-socials">
                         <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -37,17 +37,17 @@
                 <div class="footer-nav-col">
                     <h4>Nuestros Cursos</h4>
                     <ul>
-                        <li><a href="<?= BASE_URL ?>/courses/piano">Clases de Piano</a></li>
-                        <li><a href="<?= BASE_URL ?>/courses/guitar">Clases de Guitarra</a></li>
-                        <li><a href="<?= BASE_URL ?>/courses/drums">Batería y Percusión</a></li>
-                        <li><a href="<?= BASE_URL ?>/courses/vocal">Entrenamiento Vocal</a></li>
-                        <li><a href="<?= BASE_URL ?>/courses/online">Clases Online</a></li>
+                        <li><a href="<?= BASE_URL ?>/courses/violin-premium">Clases de Violín Premium</a></li>
+                        <li><a href="<?= BASE_URL ?>/courses/violin-elite">Programa de Violín Élite</a></li>
+                        <li><a href="<?= BASE_URL ?>/courses/violin-kids">Violín Suzuki para Niños</a></li>
+                        <li><a href="<?= BASE_URL ?>/courses/violin-arco">Técnica de Arco</a></li>
+                        <li><a href="<?= BASE_URL ?>/courses/violin-online">Clases de Violín Online</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-nav-col">
                     <h4>Contacto</h4>
-                    <p class="contact-item"><i class="fas fa-envelope"></i> info@yulianapianist.com</p>
+                    <p class="contact-item"><i class="fas fa-envelope"></i> info@yulianaviolinist.com</p>
                     <p class="contact-item"><i class="fas fa-phone"></i> +595 976 430263</p>
                     <p class="contact-item"><i class="fas fa-map-marker-alt"></i> Av. Mariscal López, Asunción, Paraguay</p>
                 </div>
@@ -56,7 +56,7 @@
 
         <div class="footer-bottom">
             <div class="footer-container">
-                <p>&copy; <?= date('Y') ?> Yuliana Pianist & Academia de Música. Todos los derechos reservados.</p>
+                <p>&copy; <?= date('Y') ?> Yuliana Violinist & Academia de Violín. Todos los derechos reservados.</p>
                 <div class="footer-meta-links">
                     <a href="#">Política de Privacidad</a>
                     <a href="#">Términos de Servicio</a>
@@ -81,8 +81,8 @@
     {
       "@context": "https://schema.org",
       "@type": "MusicSchool",
-      "name": "Yuliana Pianist & Academia de Música",
-      "image": "<?= BASE_URL ?>/assets/images/singer.jpg",
+      "name": "Yuliana Violinist & Academia de Violín",
+      "image": "<?= BASE_URL ?>/assets/images/violinist.jpg",
       "@id": "<?= BASE_URL ?>/#school",
       "url": "<?= BASE_URL ?>",
       "telephone": "+595-976-430263",
@@ -113,8 +113,8 @@
         "closes": "21:00"
       },
       "sameAs": [
-        "https://www.facebook.com/yulianapianist",
-        "https://www.instagram.com/yulianapianist"
+        "https://www.facebook.com/yulianaviolinist",
+        "https://www.instagram.com/yulianaviolinist"
       ]
     }
     </script>
@@ -122,9 +122,9 @@
     <!-- Módulos de JavaScript Principales -->
     <script src="<?= BASE_URL ?>/assets/js/script.js"></script>
     
-    <!-- Carga condicional del script de piano 3D en la página de inicio -->
+    <!-- Carga condicional del script de violín 3D en la página de inicio -->
     <?php if (isset($viewFile) && $viewFile === 'views/home.php'): ?>
-        <script src="<?= BASE_URL ?>/assets/js/piano3d.js"></script>
+        <script src="<?= BASE_URL ?>/assets/js/violin3d.js"></script>
     <?php endif; ?>
 </body>
 </html>

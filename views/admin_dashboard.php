@@ -235,7 +235,7 @@ try {
 
                         <div class="form-group">
                             <label for="edit_course_benefits">Beneficios y Ventajas (Separar con punto y coma ';')</label>
-                            <input type="text" id="edit_course_benefits" name="benefits" class="form-control" required placeholder="Ej. Clases de piano individuales; Pianos de alta gama; Soporte online">
+                            <input type="text" id="edit_course_benefits" name="benefits" class="form-control" required placeholder="Ej. Clases de violín individuales; Violines de alta gama; Soporte online">
                         </div>
 
                         <div class="form-group" style="margin-top:30px;">
@@ -255,7 +255,7 @@ try {
 
                         <div class="form-group">
                             <label for="blog_title">Título del Artículo *</label>
-                            <input type="text" id="blog_title" name="title" class="form-control" required placeholder="Ej. Cómo practicar piano en casa todos los días">
+                            <input type="text" id="blog_title" name="title" class="form-control" required placeholder="Ej. Cómo practicar violín en casa todos los días">
                         </div>
 
                         <div class="form-group">
@@ -265,7 +265,7 @@ try {
 
                         <div class="form-group">
                             <label for="blog_tags">Etiquetas (Separar con coma ',')</label>
-                            <input type="text" id="blog_tags" name="tags" class="form-control" placeholder="Ej. Piano,Práctica,Diaria">
+                            <input type="text" id="blog_tags" name="tags" class="form-control" placeholder="Ej. Violín,Práctica,Diaria">
                         </div>
 
                         <div class="form-group">
@@ -307,17 +307,17 @@ try {
 
                         <div class="form-group">
                             <label for="set_hero_title">Título Principal de Portada</label>
-                            <input type="text" id="set_hero_title" name="hero_title" class="form-control" value="<?= htmlspecialchars($heroTitle ?? '') ?>" required>
+                            <input type="text" id="set_hero_title" name="hero_title" class="form-control" value="<?= htmlspecialchars($settings['hero_title'] ?? '') ?>" required>
                         </div>
 
                         <div class="form-group">
                             <label for="set_hero_subtitle">Subtítulo de Portada</label>
-                            <input type="text" id="set_hero_subtitle" name="hero_subtitle" class="form-control" value="<?= htmlspecialchars($heroSubtitle ?? '') ?>" required>
+                            <input type="text" id="set_hero_subtitle" name="hero_subtitle" class="form-control" value="<?= htmlspecialchars($settings['hero_subtitle'] ?? '') ?>" required>
                         </div>
 
                         <div class="form-group">
                             <label for="set_hero_desc">Descripción General de Portada</label>
-                            <textarea id="set_hero_desc" name="hero_desc" class="form-control" required><?= htmlspecialchars($heroDesc ?? '') ?></textarea>
+                            <textarea id="set_hero_desc" name="hero_desc" class="form-control" required><?= htmlspecialchars($settings['hero_desc'] ?? '') ?></textarea>
                         </div>
 
                         <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">

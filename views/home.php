@@ -11,9 +11,9 @@ try {
     }
 
     // Default settings fallback
-    $heroTitle = $settings['hero_title'] ?? 'Donde la Música Cobra Vida';
-    $heroSubtitle = $settings['hero_subtitle'] ?? 'YULIANA PIANIST & ACADEMIA DE MÚSICA';
-    $heroDesc = $settings['hero_desc'] ?? 'Descubre la magia del piano y otros instrumentos. Aprende con Yuliana Pianista y instructores de élite en clases personalizadas presenciales y online.';
+    $heroTitle = $settings['hero_title'] ?? 'Donde el Violín Cobra Vida';
+    $heroSubtitle = $settings['hero_subtitle'] ?? 'YULIANA VIOLINIST & ACADEMIA DE VIOLÍN';
+    $heroDesc = $settings['hero_desc'] ?? 'Descubre la magia del violín. Aprende con Yuliana Violinista e instructores de élite en clases personalizadas presenciales y online.';
 
     // Fetch courses for the homepage grid
     $coursesStmt = $db->query("SELECT * FROM courses ORDER BY price ASC LIMIT 5");
@@ -28,17 +28,14 @@ try {
    SECCIÓN HÉROE (Con Lienzo de Piano 3D y Video de Fondo)
    ========================================================================== -->
 <section class="hero-section">
-    <!-- Video de Fondo en Bucle -->
-    <div class="video-bg-container">
-        <video autoplay muted loop playsinline>
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-hand-of-a-pianist-playing-piano-keys-close-up-4820-large.mp4" type="video/mp4">
-        </video>
-        <div class="video-overlay"></div>
+    <!-- Image de Fondo Estática de Violín (Premium & Rápida) -->
+    <div class="video-bg-container" style="background: url('<?= BASE_URL ?>/assets/images/violinist.jpg') no-repeat center center; background-size: cover; width: 100%; height: 100%; position: absolute; z-index: -2;">
+        <div class="video-overlay" style="background: linear-gradient(0deg, var(--bg-dark) 5%, rgba(7, 5, 14, 0.6) 50%, var(--bg-dark) 95%);"></div>
     </div>
 
-    <!-- Contenedor del Lienzo del Piano 3D Interactivo -->
+    <!-- Contenedor del Lienzo del Violín 3D Interactivo -->
     <div class="hero-canvas-container">
-        <canvas id="piano3dCanvas"></canvas>
+        <canvas id="violin3dCanvas"></canvas>
     </div>
 
     <!-- Contenido del Héroe Izquierdo -->
@@ -74,7 +71,7 @@ try {
         <div class="feature-item glass-card">
             <div class="feature-icon"><i class="fas fa-award"></i></div>
             <h3>Profesionales Certificados</h3>
-            <p>Aprende de la mano de Yuliana Pianista y concertistas con amplia trayectoria internacional.</p>
+            <p>Aprende de la mano de Yuliana Violinista y concertistas con amplia trayectoria internacional.</p>
         </div>
         <div class="feature-item glass-card">
             <div class="feature-icon"><i class="fas fa-calendar-alt"></i></div>
@@ -82,14 +79,14 @@ try {
             <p>Modifica el horario de tus clases hasta con 24 horas de anticipación desde tu panel personal.</p>
         </div>
         <div class="feature-item glass-card">
-            <div class="feature-icon"><i class="fas fa-guitar"></i></div>
+            <div class="feature-icon"><i class="fas fa-music"></i></div>
             <h3>Presentaciones y Recitales</h3>
             <p>Nuestros alumnos participan en prácticas conjuntas y tocan en escenarios y recitales reales en Asunción.</p>
         </div>
         <div class="feature-item glass-card">
             <div class="feature-icon"><i class="fas fa-cubes"></i></div>
             <h3>Tecnología Interactiva</h3>
-            <p>Usa simuladores en 3D, sintetizadores de audio y herramientas visuales para aprender teoría musical.</p>
+            <p>Usa simuladores en 3D, vibración de cuerdas y sintetizadores de audio para aprender violín de forma moderna.</p>
         </div>
     </div>
 </section>
@@ -141,13 +138,13 @@ try {
         <div class="glass-card" style="padding: 40px; position: relative;">
             <span style="font-size: 5rem; color: rgba(138,43,226,0.1); position: absolute; top: 10px; left: 20px; font-family: Georgia, serif;">“</span>
             <p style="font-style: italic; position: relative; z-index: 2; margin-bottom: 20px;">
-                "El simulador de piano 3D ayudó a mi hija de 8 años a visualizar acordes y escalas fácilmente. ¡Los recitales en vivo han aumentado enormemente su confianza!"
+                "El simulador de cuerdas de violín 3D ayudó a mi hija de 8 años a visualizar las notas y digitaciones fácilmente. ¡Los recitales han aumentado su confianza!"
             </p>
             <div style="display:flex; align-items:center; gap: 15px;">
                 <div style="width: 50px; height: 50px; border-radius:50%; background: #9d4edd; display:flex; align-items:center; justify-content:center; font-weight:bold;">SM</div>
                 <div>
                     <h4 style="font-size:1rem; margin-bottom: 2px;">Sarah Miller</h4>
-                    <small style="color:var(--text-muted);">Madre de alumna de piano</small>
+                    <small style="color:var(--text-muted);">Madre de alumna de violín</small>
                 </div>
             </div>
         </div>
@@ -155,13 +152,13 @@ try {
         <div class="glass-card" style="padding: 40px; position: relative;">
             <span style="font-size: 5rem; color: rgba(138,43,226,0.1); position: absolute; top: 10px; left: 20px; font-family: Georgia, serif;">“</span>
             <p style="font-style: italic; position: relative; z-index: 2; margin-bottom: 20px;">
-                "Tener control absoluto de mis horarios es fantástico. Mi tutora Yuliana es increíble, estructurando las prácticas rítmicas según mi propio ritmo."
+                "Tener control absoluto de mis horarios es fantástico. Mi tutora Yuliana es increíble, estructurando mis prácticas de violín según mi propio ritmo."
             </p>
             <div style="display:flex; align-items:center; gap: 15px;">
                 <div style="width: 50px; height: 50px; border-radius:50%; background: #00f5d4; color:#000; display:flex; align-items:center; justify-content:center; font-weight:bold;">JL</div>
                 <div>
                     <h4 style="font-size:1rem; margin-bottom: 2px;">Juan Luis</h4>
-                    <small style="color:var(--text-muted);">Alumno de piano adulto</small>
+                    <small style="color:var(--text-muted);">Alumno de violín adulto</small>
                 </div>
             </div>
         </div>

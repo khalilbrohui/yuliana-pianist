@@ -30,7 +30,7 @@ $nombreMes = $meses[$currentMonth];
 <section class="container" style="padding-top: 140px;">
     <div class="section-title">
         <h2>Agenda tu Clase de Prueba Gratis</h2>
-        <p>Elige tu instrumento, selecciona una fecha y reserva la hora que te convenga. Sin compromisos ni tarjetas de crédito.</p>
+        <p>Elige tu programa de violín, selecciona una fecha y reserva la hora que te convenga. Sin compromisos ni tarjetas de crédito.</p>
     </div>
 
     <div class="booking-container">
@@ -104,7 +104,7 @@ $nombreMes = $meses[$currentMonth];
                 <div class="form-group">
                     <label for="booking_course">Selecciona Instrumento / Clase *</label>
                     <select id="booking_course" name="course_id" class="form-control" required style="background:#000;">
-                        <option value="">-- Elige el Instrumento --</option>
+                        <option value="">-- Elige el Programa de Violín --</option>
                         <?php foreach ($courses as $c): ?>
                             <option value="<?= $c['id'] ?>"><?= htmlspecialchars($c['title']) ?></option>
                         <?php endforeach; ?>

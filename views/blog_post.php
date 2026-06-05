@@ -25,7 +25,7 @@ try {
     }
 
     // Dynamic titles
-    $pageTitle = $post['title'] . " - Diario Yuliana Pianist";
+    $pageTitle = $post['title'] . " - Diario Yuliana Violinist";
     $pageDescription = $post['excerpt'];
 
     // Query Related Articles

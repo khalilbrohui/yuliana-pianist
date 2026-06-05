@@ -10,7 +10,7 @@ try {
         $settings[$row['setting_key']] = $row['setting_value'];
     }
 
-    $contactEmail = $settings['contact_email'] ?? 'info@yulianapianist.com';
+    $contactEmail = $settings['contact_email'] ?? 'info@yulianaviolinist.com';
     $contactPhone = $settings['contact_phone'] ?? '+595 976 430263';
     $contactAddress = $settings['contact_address'] ?? 'Asunción, Paraguay';
 
@@ -22,7 +22,7 @@ try {
 <section class="container" style="padding-top: 140px;">
     <div class="section-title">
         <h2>Ponte en Contacto</h2>
-        <p>¿Tienes preguntas sobre nuestras clases de piano, metodologías o inscripciones? Envíanos un mensaje y te responderemos en la brevedad.</p>
+        <p>¿Tienes preguntas sobre nuestras clases de violín, metodologías o inscripciones? Envíanos un mensaje y te responderemos en la brevedad.</p>
     </div>
 
     <div class="contact-grid-split">

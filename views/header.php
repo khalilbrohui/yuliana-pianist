@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Optimización SEO -->
-    <title><?= isset($pageTitle) ? htmlspecialchars($pageTitle) : 'Yuliana Pianist - Clases de Música Premium' ?></title>
-    <meta name="description" content="<?= isset($pageDescription) ? htmlspecialchars($pageDescription) : 'Desarrolla tu talento musical con instructores de primer nivel en Piano, Guitarra, Batería y Voz.' ?>">
+    <title><?= isset($pageTitle) ? htmlspecialchars($pageTitle) : 'Yuliana Violinist - Clases de Violín Premium' ?></title>
+    <meta name="description" content="<?= isset($pageDescription) ? htmlspecialchars($pageDescription) : 'Desarrolla tu talento musical con instructores de primer nivel en Violín, Violín Suzuki y Clases de Violín Online.' ?>">
     
     <!-- Fuentes de Google -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -34,7 +34,7 @@
         <div class="header-container">
             <a href="<?= BASE_URL ?>/" class="logo-link" id="logoBrand">
                 <span class="logo-text">YULIANA</span>
-                <span class="logo-subtext">PIANIST & ACADEMIA</span>
+                <span class="logo-subtext">VIOLINIST & ACADEMIA</span>
                 <div class="logo-dot"></div>
             </a>
             
@@ -44,11 +44,11 @@
                     <li class="dropdown">
                         <a href="#" class="nav-link dropdown-toggle">Cursos <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="<?= BASE_URL ?>/courses/piano">Clases de Piano</a></li>
-                            <li><a href="<?= BASE_URL ?>/courses/guitar">Clases de Guitarra</a></li>
-                            <li><a href="<?= BASE_URL ?>/courses/drums">Batería y Percusión</a></li>
-                            <li><a href="<?= BASE_URL ?>/courses/vocal">Entrenamiento Vocal</a></li>
-                            <li><a href="<?= BASE_URL ?>/courses/online">Clases Online</a></li>
+                            <li><a href="<?= BASE_URL ?>/courses/violin-premium">Clases de Violín Premium</a></li>
+                            <li><a href="<?= BASE_URL ?>/courses/violin-elite">Programa de Violín Élite</a></li>
+                            <li><a href="<?= BASE_URL ?>/courses/violin-kids">Violín Suzuki para Niños</a></li>
+                            <li><a href="<?= BASE_URL ?>/courses/violin-arco">Técnica de Arco</a></li>
+                            <li><a href="<?= BASE_URL ?>/courses/violin-online">Clases de Violín Online</a></li>
                         </ul>
                     </li>
                     <li><a href="<?= BASE_URL ?>/blog" class="nav-link">Blog</a></li>

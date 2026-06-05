@@ -20,7 +20,7 @@ try {
     }
 
     // Set page headers dynamically
-    $pageTitle = $course['title'] . " - Yuliana Pianist";
+    $pageTitle = $course['title'] . " - Yuliana Violinist";
     $pageDescription = $course['description'];
 
     // Parse benefits
@@ -49,7 +49,7 @@ try {
     <div class="course-hero-container container">
         <div class="course-hero-grid">
             <div class="course-hero-content">
-                <span class="course-hero-tag">Programa Yuliana Pianist</span>
+                <span class="course-hero-tag">Programa Yuliana Violinist</span>
                 <h1><?= htmlspecialchars($course['title']) ?></h1>
                 <p class="hero-desc" style="font-size:1.3rem;">
                     <?= htmlspecialchars($course['description']) ?>
